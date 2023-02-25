@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -33,11 +33,7 @@
       "category": "your.app.category.type",
       "target": "AppImage"
     },
-    "publish": [ 
-      {
-        "provider": "generic",
-        "url": "http://127.0.0.1:8080/"
-      },
+    "publish": [
       {
         "provider": "github",
         "owner": "olyy111",
