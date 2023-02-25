@@ -93,6 +93,10 @@ autoUpdater.on('download-progress', (progressObj) => {
 autoUpdater.on('update-downloaded', (info) => {
   sendStatusToWindow('Update downloaded');
 });
+autoUpdater.on('update-downloaded', (info) => {
+  autoUpdater.quitAndInstall();  
+})
+
 app.on('ready', function() {
   // Create the Menu
   const menu = Menu.buildFromTemplate(template);
